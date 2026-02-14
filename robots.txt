@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Permitir recursos críticos
+Allow: /assets/style/
+Allow: /assets/js/
+Allow: /assets/img/
+
+# Bloquear rutas sensibles comunes (preventivo)
+Disallow: /.git/
+Disallow: /README.md
+
+Sitemap: https://maickr.github.io/dinero_fluye/sitemap.xml
