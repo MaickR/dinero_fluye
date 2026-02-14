@@ -733,3 +733,44 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
         //     .catch(error => console.error('❌ Error al registrar Service Worker:', error));
     });
 }
+
+/**
+ * Función para copiar link de pago al portapapeles
+ * @param {string} inputId - ID del input que contiene el link
+ */
+function copiarLink(inputId) {
+    const input = document.getElementById(inputId);
+    
+    if (!input) return;
+    
+    // Seleccionar el texto
+    input.select();
+    input.setSelectionRange(0, 99999); // Para móviles
+    
+    // Copiar al portapapeles (método moderno)
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(input.value)
+            .then(() => {
+                // Cambiar temporalmente el botón para mostrar feedback
+                const boton = event.target.closest('button');
+                const textoOriginal = boton.innerHTML;
+                boton.innerHTML = '<i class="fas fa-check"></i> Copiado';
+                boton.classList.add('btn-success');
+                
+                setTimeout(() => {
+                    boton.innerHTML = textoOriginal;
+                    boton.classList.remove('btn-success');
+                }, 2000);
+            })
+            .catch(() => {
+                // Fallback para navegadores antiguos
+                document.execCommand('copy');
+                alert('Link copiado al portapapeles');
+            });
+    } else {
+        // Fallback para navegadores muy antiguos
+        document.execCommand('copy');
+        alert('Link copiado al portapapeles');
+    }
+}
+

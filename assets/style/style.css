@@ -3958,3 +3958,104 @@ h1, h2, h3, h4, h5 {
         font-size: 0.9rem;
     }
 }
+
+/* ========================================
+   ESTILOS PARA MODALES DE QR Y PAGOS
+======================================== */
+
+/* Botón Outline Dorado */
+.btn-outline-dorado {
+    color: var(--dorado);
+    border: 2px solid var(--dorado);
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-dorado:hover {
+    background: var(--dorado);
+    color: white;
+    box-shadow: 0 5px 15px rgba(203, 163, 93, 0.3);
+}
+
+/* Modal QR */
+.modal-qr .modal-content {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.modal-qr .modal-header {
+    background: linear-gradient(135deg, rgba(10, 61, 52, 0.05) 0%, rgba(203, 163, 93, 0.05) 100%);
+    padding: 2rem 1.5rem 1rem;
+}
+
+.modal-qr .modal-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--verde-oscuro);
+}
+
+.qr-container {
+    background: white;
+    border: 3px solid #f0f0f0;
+    border-radius: 15px;
+    padding: 1.5rem;
+    display: inline-block;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.qr-image {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.modal-qr .input-group {
+    max-width: 100%;
+}
+
+.modal-qr .form-control {
+    border: 2px solid #e0e0e0;
+    border-radius: 10px 0 0 10px;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    background: #f8f9fa;
+}
+
+.modal-qr .input-group .btn {
+    border-radius: 0 10px 10px 0;
+    padding: 0.75rem 1.5rem;
+}
+
+.modal-qr .alert {
+    border-radius: 10px;
+    border: none;
+}
+
+.modal-qr .alert-info {
+    background: linear-gradient(135deg, rgba(10, 61, 52, 0.1) 0%, rgba(10, 61, 52, 0.05) 100%);
+    color: var(--verde-oscuro);
+}
+
+.modal-qr .alert-success {
+    background: linear-gradient(135deg, rgba(203, 163, 93, 0.15) 0%, rgba(203, 163, 93, 0.08) 100%);
+    color: var(--verde-oscuro);
+}
+
+/* Responsive QR Modals */
+@media (max-width: 576px) {
+    .qr-image {
+        max-width: 220px;
+    }
+    
+    .modal-qr .modal-title {
+        font-size: 1.2rem;
+    }
+    
+    .qr-container {
+        padding: 1rem;
+    }
+}
+

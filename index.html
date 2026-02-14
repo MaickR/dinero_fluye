@@ -692,9 +692,23 @@
                                 <li><i class="fas fa-check"></i> Material digital y audios</li>
                                 <li><i class="fas fa-check"></i> Recibo fiscal incluido</li>
                             </ul>
-                            <a href="https://wa.me/14088009376?text=Hola%20Isabela,%20me%20gustar%C3%ADa%20inscribirme%20al%20programa%20Dinero%20Fluye%20con%20el%20plan%20de%203%20pagos%20mensuales%20(%24550%2Fmes).%20%C2%BFC%C3%B3mo%20procedo%3F" class="btn btn-outline-verde w-100 btn-precio" target="_blank">
-                                <i class="fab fa-whatsapp me-2"></i>Elegir Plan de Pagos
+                            
+                            <!-- Botón Principal de Pago -->
+                            <a href="https://square.link/u/2k6Vnb62" class="btn btn-outline-verde w-100 btn-precio mb-2" target="_blank">
+                                <i class="fas fa-credit-card me-2"></i>Pagar Ahora (3 Pagos)
                             </a>
+                            
+                            <!-- Botón QR Code -->
+                            <button class="btn btn-outline-secondary w-100 mb-2" data-bs-toggle="modal" data-bs-target="#qrModal3Pagos">
+                                <i class="fas fa-qrcode me-2"></i>Ver Código QR
+                            </button>
+                            
+                            <!-- Link Consulta WhatsApp -->
+                            <div class="text-center mt-2">
+                                <a href="https://wa.me/14088009376?text=Hola%20Isabela,%20tengo%20preguntas%20sobre%20el%20plan%20de%203%20pagos." class="text-muted small" target="_blank">
+                                    <i class="fab fa-whatsapp me-1"></i>¿Dudas? Escríbenos
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -719,9 +733,23 @@
                                 <li><i class="fas fa-check-circle"></i> Recibo fiscal incluido</li>
                                 <li><i class="fas fa-check-circle"></i> <strong>Grupo privado de WhatsApp</strong></li>
                             </ul>
-                            <a href="https://wa.me/14088009376?text=Hola%20Isabela,%20me%20gustar%C3%ADa%20inscribirme%20al%20programa%20Dinero%20Fluye%20con%20pago%20%C3%BAnico%20(%241%2C500).%20%C2%BFC%C3%B3mo%20procedo%3F" class="btn btn-dorado-gradiente w-100 btn-precio" target="_blank">
-                                <i class="fab fa-whatsapp me-2"></i>Elegir Pago Único
+                            
+                            <!-- Botón Principal de Pago -->
+                            <a href="https://square.link/u/ha3qFvCX" class="btn btn-dorado-gradiente w-100 btn-precio mb-2" target="_blank">
+                                <i class="fas fa-credit-card me-2"></i>Pagar Ahora ($1,500)
                             </a>
+                            
+                            <!-- Botón QR Code -->
+                            <button class="btn btn-outline-dorado w-100 mb-2" data-bs-toggle="modal" data-bs-target="#qrModalPagoUnico">
+                                <i class="fas fa-qrcode me-2"></i>Ver Código QR
+                            </button>
+                            
+                            <!-- Link Consulta WhatsApp -->
+                            <div class="text-center mt-2">
+                                <a href="https://wa.me/14088009376?text=Hola%20Isabela,%20tengo%20preguntas%20sobre%20el%20pago%20%C3%BAnico." class="text-muted small" target="_blank">
+                                    <i class="fab fa-whatsapp me-1"></i>¿Dudas? Escríbenos
+                                </a>
+                            </div>
                         </div>
                         </div>
                 </div>
@@ -1211,6 +1239,97 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-outline-verde" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== MODAL QR CODE - PLAN 3 PAGOS ===================== -->
+    <div class="modal fade" id="qrModal3Pagos" tabindex="-1" aria-labelledby="qrModal3PagosLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-qr">
+                <div class="modal-header border-0">
+                    <h3 class="modal-title w-100 text-center" id="qrModal3PagosLabel">
+                        <i class="fas fa-qrcode text-verde me-2"></i>
+                        Plan de 3 Pagos - $550/mes
+                    </h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center py-4">
+                    <p class="lead mb-4">Escanea el código QR con tu celular para pagar de forma segura</p>
+                    
+                    <div class="qr-container mb-4">
+                        <img src="./assets/img/checkout-link-qr-code.png" alt="QR Plan 3 Pagos" class="qr-image">
+                    </div>
+                    
+                    <div class="alert alert-info mb-3">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong>Total:</strong> $1,650 USD en 3 pagos mensuales de $550
+                    </div>
+                    
+                    <p class="text-muted small mb-3">O copia el link directo:</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" value="https://square.link/u/2k6Vnb62" id="link3Pagos" readonly>
+                        <button class="btn btn-outline-verde" type="button" onclick="copiarLink('link3Pagos')">
+                            <i class="fas fa-copy"></i> Copiar
+                        </button>
+                    </div>
+                    
+                    <a href="https://square.link/u/2k6Vnb62" class="btn btn-verde-grande w-100" target="_blank">
+                        <i class="fas fa-external-link-alt me-2"></i>Abrir Link de Pago
+                    </a>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <p class="text-muted small mb-0">
+                        <i class="fas fa-lock me-1"></i>Pago 100% seguro procesado por Square
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== MODAL QR CODE - PAGO ÚNICO ===================== -->
+    <div class="modal fade" id="qrModalPagoUnico" tabindex="-1" aria-labelledby="qrModalPagoUnicoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-qr">
+                <div class="modal-header border-0">
+                    <h3 class="modal-title w-100 text-center" id="qrModalPagoUnicoLabel">
+                        <i class="fas fa-qrcode text-dorado me-2"></i>
+                        Pago Único - $1,500 USD
+                    </h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center py-4">
+                    <div class="badge badge-ahorro mb-3 fs-6">
+                        <i class="fas fa-tag me-1"></i>Ahorras $150 USD
+                    </div>
+                    <p class="lead mb-4">Escanea el código QR con tu celular para pagar de forma segura</p>
+                    
+                    <div class="qr-container mb-4">
+                        <img src="./assets/img/checkout-link-qr-code-2.png" alt="QR Pago Único" class="qr-image">
+                    </div>
+                    
+                    <div class="alert alert-success mb-3">
+                        <i class="fas fa-check-circle me-2"></i>
+                        <strong>Total:</strong> $1,500 USD - Un solo pago
+                    </div>
+                    
+                    <p class="text-muted small mb-3">O copia el link directo:</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" value="https://square.link/u/ha3qFvCX" id="linkPagoUnico" readonly>
+                        <button class="btn btn-outline-dorado" type="button" onclick="copiarLink('linkPagoUnico')">
+                            <i class="fas fa-copy"></i> Copiar
+                        </button>
+                    </div>
+                    
+                    <a href="https://square.link/u/ha3qFvCX" class="btn btn-dorado-gradiente w-100" target="_blank">
+                        <i class="fas fa-external-link-alt me-2"></i>Abrir Link de Pago
+                    </a>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <p class="text-muted small mb-0">
+                        <i class="fas fa-lock me-1"></i>Pago 100% seguro procesado por Square
+                    </p>
                 </div>
             </div>
         </div>
