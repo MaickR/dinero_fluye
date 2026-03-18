@@ -563,10 +563,16 @@ class DineroFluyeApp {
      * Precarga recursos críticos para mejor rendimiento
      */
     precargarRecursos() {
-        // Precargar imágenes críticas
+        // Derive asset base path from the navbar logo already in the DOM
+        // This works correctly from both / and /en/ without hardcoded paths
+        const logoImg = document.querySelector('.logo-navbar');
+        const base = logoImg
+            ? logoImg.getAttribute('src').replace('logo-Mundoholistico.png', '')
+            : './assets/img/';
+
         const imagenesCriticas = [
-            './assets/img/isabela-tena.jpeg',
-            './assets/img/logo-Mundoholistico.png'
+            base + 'isabela-tena.jpeg',
+            base + 'logo-Mundoholistico.png'
         ];
 
         imagenesCriticas.forEach(src => {

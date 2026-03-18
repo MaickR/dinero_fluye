@@ -1,284 +1,213 @@
-# 💰 Dinero Fluye - Landing Page
+﻿# Dinero Fluye — Bilingual Landing Page
 
 <div align="center">
 
-![Estado](https://img.shields.io/badge/estado-listo%20para%20producci%C3%B3n-brightgreen)
-![Versión](https://img.shields.io/badge/versión-1.0.0-blue)
-![Licencia](https://img.shields.io/badge/licencia-Privado-red)
+[![Status](https://img.shields.io/badge/status-live-brightgreen)](https://maickr.github.io/dinero_fluye/)
+[![Version](https://img.shields.io/badge/version-2.0.0-blue)](#)
+[![License](https://img.shields.io/badge/license-Private-red)](#)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](#)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](#)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black)](#)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.3-7952B3?logo=bootstrap&logoColor=white)](#)
 
-**Landing page profesional para el programa grupal de transformación financiera "Dinero Fluye"**
+**Professional conversion landing page for the "Dinero Fluye" group financial transformation program**  
+*by [Mundo Holistico USA](https://www.instagram.com/mundoholisticousaoficial/)*
 
-[📱 Ver Demo](#) | [📧 Contacto](mailto:mundoholisticousa@gmail.com) | [🌐 Mundo Holístico USA](https://www.instagram.com/mundoholisticousaoficial/)
+[Live Site (ES)](https://maickr.github.io/dinero_fluye/) &nbsp;|&nbsp; [Live Site (EN)](https://maickr.github.io/dinero_fluye/en/) &nbsp;|&nbsp; [Contact](mailto:mundoholisticousa@gmail.com)
 
 </div>
 
 ---
 
-## 📋 Descripción
+## Overview
 
-Landing page de conversión optimizada para el **Programa Grupal: Dinero Fluye**, un programa de 7 semanas diseñado para transformar la relación de las personas con el dinero y la abundancia.
+**Dinero Fluye** ("Money Flows") is a 7-week group coaching program that transforms participants' relationship with money and abundance. This repository contains the complete bilingual landing page — Spanish (primary) and English — built as a static site hosted on GitHub Pages.
 
-### 🎯 Características Principales
-
-- ✅ **Diseño Responsive** - Optimizado para móvil, tablet y desktop
-- ✅ **Conversión Estratégica** - Embudo diseñado para guiar al cliente paso a paso
-- ✅ **WhatsApp Integrado** - Mensajes personalizados según la acción del usuario
-- ✅ **Animaciones Suaves** - AOS (Animate On Scroll) para mejor experiencia
-- ✅ **SEO Optimizado** - Meta tags y estructura semántica
-- ✅ **Performance** - Carga rápida y optimizada
-- ✅ **Pagos Directos** - Integración con Square (link + QR por plan)
-- ✅ **Preparación Producción** - `robots.txt`, `sitemap.xml` y `.htaccess`
+The page is engineered around a proven conversion funnel: it guides visitors from awareness to WhatsApp enrollment using strategic CTAs, social proof, program methodology, and transparent pricing.
 
 ---
 
-## 🚀 Estado de Producción
+## Key Features
 
-La landing page está preparada para despliegue con base técnica sólida:
-
-- ✅ SEO técnico implementado (Open Graph, Twitter Card, canonical, JSON-LD)
-- ✅ Recursos optimizados (`defer` en scripts, `preconnect`, `preload`)
-- ✅ Indexación configurada (`robots.txt` + `sitemap.xml`)
-- ✅ Reglas de servidor para Apache (`.htaccess` con caché, compresión y seguridad)
-- ✅ CTAs y rutas de pago validadas (WhatsApp + Square)
-
-> Nota: Si despliegas en GitHub Pages, `.htaccess` no aplica. Para aprovechar caché/headers avanzados, usar Apache, Netlify, Vercel o Cloudflare.
-
----
-
-## 🎨 Paleta de Colores
-
-La selección cromática está basada en psicología del color aplicada a finanzas y abundancia:
-
-| Color | Código | Significado |
-|-------|--------|-------------|
-| **Verde Oscuro** | `#0a3d34` | Prosperidad, crecimiento, seguridad financiera |
-| **Dorado** | `#cba35d` | Riqueza, valor premium, transformación |
-| **Beige** | `#f5f1e8` | Calma, calidez, accesibilidad |
-| **Gris Texto** | `#5a6c68` | Legibilidad, profesionalismo |
+| Feature | Details |
+|---|---|
+| **Bilingual** | Full Spanish + English versions with `hreflang` SEO alternates |
+| **Responsive** | Mobile-first layout; tested at 320px–2500px |
+| **Language Switcher** | Elegant pill (desktop) + offcanvas row (mobile) with FA globe icon |
+| **WhatsApp CTAs** | 6 pre-filled messages adapted per action (ES & EN) |
+| **Payment Integration** | Square payment links + QR codes per plan |
+| **Conversion Funnel** | AIDA structure across 10 sections |
+| **SEO** | Open Graph, Twitter Card, JSON-LD schema, canonical, sitemap |
+| **Performance** | Deferred scripts, preconnect hints, DOM-relative preloading |
+| **Animations** | AOS (Animate On Scroll) — no jank, respects reduced-motion |
 
 ---
 
-## 🏗️ Estructura de Secciones
+## Live URLs
+
+| Language | URL |
+|---|---|
+| Spanish (default) | https://maickr.github.io/dinero_fluye/ |
+| English | https://maickr.github.io/dinero_fluye/en/ |
+
+---
+
+## Color Palette
+
+Colors chosen for financial psychology and trust:
+
+| Variable | Hex | Role |
+|---|---|---|
+| `--verde-oscuro` | `#0a3d34` | Primary — prosperity, growth |
+| `--dorado` | `#cba35d` | Accent — premium value, wealth |
+| `--beige` | `#f5f1e8` | Background — warmth, calm |
+| `--gris-texto` | `#5a6c68` | Body text — readability |
+
+---
+
+## Page Sections
 
 ```
-📄 Landing Page
-├── 🏠 Hero - Propuesta de valor inicial
-├── ⚡ Banner Urgencia - Escasez y disponibilidad limitada
-├── 🎯 Identificación - Problemas del cliente objetivo
-├── 📚 Metodología - 7 semanas del programa
-├── 👩‍🏫 Instructor - Credibilidad y autoridad (Isabela Tena)
-├── ⚖️ Comparación - Individual vs Grupal (ahorro $1,000)
-├── 💵 Inversión - Opciones de pago ($1,500 / $1,650)
-├── ❓ FAQ - Preguntas frecuentes
-├── 🎤 Charla Orientación - Lead magnet gratuito
-└── 📞 Footer - Contacto y CTAs finales
+Landing Page
+├── Hero              — Value proposition + primary CTA
+├── Urgency Banner    — Scarcity & limited availability
+├── Pain Points       — Audience identification
+├── Methodology       — 7-week program breakdown
+├── Instructor        — Isabela Tena's credibility & bio
+├── Comparison        — Group vs Individual (save $1,000)
+├── Pricing           — Payment options ($1,500 / $1,650)
+├── FAQ               — Objection handling
+├── Orientation Talk  — Free lead magnet
+└── Footer            — Final CTAs + legal links
 ```
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Tech Stack
 
-| Tecnología | Versión | Propósito |
-|------------|---------|-----------|
-| **HTML5** | - | Estructura semántica |
-| **CSS3** | - | Estilos personalizados y animaciones |
-| **JavaScript** | ES6+ | Interactividad y funcionalidad |
-| **Bootstrap** | 5.3.3 | Framework responsive |
-| **AOS** | 2.3.1 | Animaciones on scroll |
-| **Font Awesome** | 6.5.1 | Iconografía |
-| **Google Fonts** | - | Tipografías (Playfair Display, Lato) |
+| Technology | Version | Purpose |
+|---|---|---|
+| HTML5 | — | Semantic structure |
+| CSS3 | — | Custom styles & animations (~4,100 lines) |
+| JavaScript | ES6+ | App class — scroll, lazy-load, preload |
+| Bootstrap | 5.3.3 | Responsive grid & components |
+| AOS | 2.3.1 | Scroll-triggered animations |
+| Font Awesome | 6.5.1 | Icons (including globe for lang switcher) |
+| Google Fonts | — | Playfair Display + Lato |
+
+All dependencies loaded from CDN — no build tools, no npm required.
 
 ---
 
-## 📂 Estructura del Proyecto
+## Project Structure
 
 ```
-dinero-fluye/
+dinero_fluye/
+├── index.html              # Spanish landing page (primary)
+├── README.md
+├── robots.txt              # Crawler rules
+├── sitemap.xml             # Sitemap for indexation
 │
-├── index.html                 # Página principal
-├── README.md                  # Este archivo
-├── robots.txt                 # Reglas de rastreo para buscadores
-├── sitemap.xml                # Mapa del sitio para indexación
-├── .htaccess                  # Reglas de servidor (Apache)
+├── en/
+│   └── index.html          # English landing page
 │
-├── assets/
-│   ├── img/                   # Imágenes y logos
-│   │   ├── logo-Mundoholistico.png
-│   │   └── isabela-tena.jpeg
-│   │
-│   ├── style/
-│   │   └── style.css          # Estilos personalizados (3,900+ líneas)
-│   │
-│   └── js/
-│       └── main.js            # JavaScript principal (730+ líneas)
-│
-└── .gitignore                 # Archivos ignorados por Git
+└── assets/
+    ├── img/
+    │   ├── logo-Mundoholistico.png
+    │   └── isabela-tena.jpeg
+    ├── style/
+    │   └── style.css       # All custom styles
+    └── js/
+        └── main.js         # DineroFluyeApp class
 ```
 
 ---
 
-## 🚀 Instalación y Uso
+## Local Development
 
-### Opción 1: Abrir Directamente
+No build step required — just serve the files:
+
 ```bash
-# Clonar el repositorio
+# Clone
 git clone https://github.com/MaickR/dinero_fluye.git
-
-# Navegar al directorio
 cd dinero_fluye
 
-# Abrir index.html en tu navegador
-```
-
-### Opción 2: Con Servidor Local
-```bash
-# Si tienes Python 3
+# Option A — Python
 python -m http.server 8000
 
-# Si tienes Node.js con http-server
+# Option B — Node.js
 npx http-server
 
-# Luego abre: http://localhost:8000
+# Option C — VS Code
+# Install "Live Server" extension, right-click index.html > Open with Live Server
 ```
 
-### Opción 3: Con Live Server (VSCode)
-1. Instalar extensión "Live Server"
-2. Click derecho en `index.html`
-3. Seleccionar "Open with Live Server"
+> **Important:** Always use a local server (not `file://`) to avoid CORS issues with fonts and assets.
 
 ---
 
-## 📊 Estrategia de Conversión
+## SEO Implementation
 
-### Embudo de Conversión (Conversion Funnel)
+- `hreflang` alternates on both pages (`es`, `en`, `x-default`)
+- `canonical` URLs per page
+- Open Graph + Twitter Card meta tags
+- JSON-LD structured data: `Organization`, `Course`, `WebSite`
+- `robots.txt` + `sitemap.xml`
+
+---
+
+## Conversion Funnel
 
 ```
-┌─────────────────────────────────────┐
-│  1. ATENCIÓN (Hero + Urgencia)      │ ← 100% visitantes
-├─────────────────────────────────────┤
-│  2. INTERÉS (Identificación)        │ ← 70% visitantes
-├─────────────────────────────────────┤
-│  3. DESEO (Metodología + Valor)     │ ← 40% visitantes
-├─────────────────────────────────────┤
-│  4. ACCIÓN (CTAs WhatsApp)          │ ← 15-25% conversión
-└─────────────────────────────────────┘
+Awareness  (Hero + Urgency)       100% visitors
+   |
+Interest   (Pain Points)           ~70%
+   |
+Desire     (Methodology + Value)   ~40%
+   |
+Action     (WhatsApp CTAs)         15-25% conversion target
 ```
 
-### CTAs Estratégicos
+**CTA Map:**
 
-| CTA | Ubicación | Mensaje WhatsApp |
-|-----|-----------|------------------|
-| **Inscripción Principal** | Navegación/Footer | Inscripción directa |
-| **Plan de Pagos** | Sección Inversión | 3 pagos de $550/mes |
-| **Pago Único** | Sección Inversión | $1,500 USD |
-| **Charla Gratuita** | Sección Charla | Registro charla febrero |
-| **Consultas** | FAQ | Preguntas generales |
-| **WhatsApp Flotante** | Siempre visible | Información general |
-
----
-
-## ✨ Características de UX/UI
-
-### 🎯 Diseño Centrado en Conversión
-- **Above the fold** optimizado con propuesta de valor clara
-- **Colores estratégicos** basados en psicología del marketing
-- **Espaciado generoso** para mejor legibilidad
-- **Jerarquía visual** clara con tipografías Playfair Display y Lato
-
-### 📱 Responsive Design
-- **Breakpoints**: 767px, 991px, 1400px, 2500px
-- **Mobile-first approach**: Diseño optimizado para móviles
-- **Menu offcanvas**: Navegación lateral para pantallas pequeñas
-- **Imágenes adaptativas**: Optimizadas para cada dispositivo
-
-### ⚡ Performance
-- **Lazy loading**: Carga diferida de imágenes
-- **CSS optimizado**: Selectores eficientes
-- **JavaScript modular**: Código organizado en clases
-- **Precarga de recursos críticos**: Fonts e imágenes principales
-- **Scripts con `defer`**: Menor bloqueo de render
-- **Hints de red (`preconnect`)**: Menor latencia con CDNs
-
-### 🔎 SEO Técnico
-- **Meta tags avanzados**: `robots`, `canonical`, `theme-color`, `referrer`
-- **Social metadata**: Open Graph + Twitter Card
-- **Datos estructurados**: JSON-LD tipo `Organization`, `Course` y `WebSite`
-- **Indexación**: `robots.txt` y `sitemap.xml`
+| Button | Section | Destination |
+|---|---|---|
+| Main Enrollment | Navbar / Hero | WhatsApp (direct enrollment) |
+| Payment Plan | Pricing | WhatsApp (3x $550/month) |
+| Full Payment | Pricing | WhatsApp ($1,500 one-time) |
+| Free Talk | Orientation section | WhatsApp (register for talk) |
+| FAQ Question | FAQ | WhatsApp (general questions) |
+| Floating Button | Always visible | WhatsApp (general info) |
 
 ---
 
-## 📋 Checklist de Materiales Pendientes
+## Deployment Notes
 
-Para optimización al 100%, se requiere:
+This site is hosted on **GitHub Pages** (static hosting).
 
-### 🔴 Prioridad Alta
-- [ ] Video/foto profesional de Isabela (hero section)
-- [ ] 3-5 testimonios de clientes con fotos
-- [ ] Fecha exacta de charla de orientación febrero 2026
-
-### 🟡 Prioridad Media
-- [ ] Logos oficiales de empresas (Nature Sunshine, Mary Kay, etc.)
-- [ ] Breakdown detallado semana por semana del programa
-- [ ] Foto de grupo anterior (privacidad protegida)
-
-### 🟢 Prioridad Baja
-- [ ] Screenshots de materiales entregables
-- [ ] Garantía específica (si aplica)
-- [ ] Bonos adicionales
-- [ ] Certificado final del programa
+- `.htaccess` is not applicable on GitHub Pages (removed in v2.0)
+- For advanced caching and compression headers, deploy to Apache, Netlify, Vercel, or Cloudflare Pages
+- All asset paths in `en/index.html` reference `../assets/` (relative to subdirectory)
+- `main.js` derives asset base path from the DOM logo `src` — safe from any subdirectory
 
 ---
 
-## 🎯 Próximos Pasos
+## Contact
 
-1. ✅ **Fase 1 - Estructura Base** *(Completada)*
-   - Diseño responsive
-   - Secciones estratégicas
-   - CTAs optimizados
-
-2. 🔄 **Fase 2 - Optimización Avanzada** *(En proceso)*
-   - Integración de testimonios
-   - Media profesionales
-   - A/B testing de CTAs
-
-3. ⏳ **Fase 3 - Lanzamiento** *(Pendiente)*
-   - Hosting y dominio
-   - Analytics (Google Analytics / Facebook Pixel)
-   - Campaña de lanzamiento
+**Mundo Holistico USA**
+- Instagram: [@mundoholisticousaoficial](https://www.instagram.com/mundoholisticousaoficial/)
+- Email: mundoholisticousa@gmail.com
 
 ---
 
-## 📞 Contacto
+## License
 
-**Mundo Holístico USA**
-- 📱 WhatsApp: [+1 408-800-9376](https://wa.me/14088009376)
-- 📧 Email: mundoholisticousa@gmail.com
-- 📸 Instagram: [@mundoholisticousaoficial](https://www.instagram.com/mundoholisticousaoficial/)
-- 📘 Facebook: [Mundo Holístico USA](https://www.facebook.com/mundoholisticousa)
-- 🎥 YouTube: [Mundo Holístico USA](https://www.youtube.com/@Mundoholisticousa)
-
----
-
-## 📄 Licencia
-
-Este proyecto es **privado y confidencial**. Todos los derechos reservados © 2026 Mundo Holístico USA.
-
-Prohibida su reproducción, distribución o uso sin autorización expresa.
-
----
-
-## 👨‍💻 Desarrollador
-
-Desarrollado con 💚 por el equipo de Mundo Holístico USA
-
-**Versión:** 1.0.0 - Febrero 2026
+Private — All rights reserved. This codebase is proprietary to Mundo Holistico USA.
 
 ---
 
 <div align="center">
 
-**[⬆ Volver arriba](#-dinero-fluye---landing-page)**
-
-Made with ❤️ for transformation and abundance
+[Back to top](#dinero-fluye--bilingual-landing-page)
 
 </div>
